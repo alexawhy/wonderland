@@ -12,6 +12,7 @@ In Alex in Wonderland, uesrs will be able to:
 - [ ] View the application in dark mode
 
 ## Wireframe
+![wireframe](src/assets/wireframe.jpg)
 
 ## Architecture and Technology 
 - `JavaScript`
