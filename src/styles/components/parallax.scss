@@ -4,7 +4,7 @@
   // height: calc(100vh - 72px);
   position: relative;
   overflow-x: hidden;
-  overflow-y: visible;
+  overflow-y: clip;
 }
 
 #cloud1 {
@@ -31,26 +31,12 @@
   left: 15%;
 }
 
-#title-svg {
-  position: absolute;
-  z-index: 14;
-  width: 50%;
-  left: 50%;
-  font-family: $round;
-  font-size: 10em;
-  text-align: center;
-  line-height: 1;
-  text-transform: uppercase;
-  color: $congo-pink;
-  transform: translate(-50%, 10%);
-}
-
 #title {
   position: absolute;
   z-index: 14;
   left: 50%;
   font-family: $round;
-  font-size: 10em;
+  font-size: 10vw;
   text-align: center;
   line-height: 1;
   word-wrap: normal;

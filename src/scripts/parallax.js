@@ -23,9 +23,12 @@ document.addEventListener("scroll", (e) => {
   title.style.top = `${scroll/30}%`;
 
   cloud1.style.top = `${5 - scroll/20}%`;
+  cloud1.style.left = `${3 - scroll/80}%`;
   cloud1.style.width = `${15 - scroll/80}%`;
   cloud2.style.top = `${20 - scroll/15}%`;
+  cloud2.style.right = `${5 + scroll/60}%`;
   cloud2.style.width = `${15 - scroll/80}%`;
   cloud3.style.top = `${40 - scroll/10}%`;
+  cloud3.style.left = `${15 - scroll/60}%`;
   cloud3.style.width = `${17.5 - scroll/80}%`;
 })
