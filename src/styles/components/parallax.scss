@@ -3,7 +3,8 @@
   height: 100vh;
   // height: calc(100vh - 72px);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 #cloud1 {
@@ -30,13 +31,34 @@
   left: 15%;
 }
 
-
-#title {
+#title-svg {
   position: absolute;
   z-index: 14;
   width: 50%;
   left: 50%;
+  font-family: $round;
+  font-size: 10em;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $congo-pink;
   transform: translate(-50%, 10%);
+}
+
+#title {
+  position: absolute;
+  z-index: 14;
+  left: 50%;
+  font-family: $round;
+  font-size: 10em;
+  text-align: center;
+  line-height: 1;
+  word-wrap: normal;
+  text-transform: uppercase;
+  color: $congo-pink;
+  transform: translate(-50%, 10%);
+  text-shadow: 5px 5px $apricot;
+  -webkit-text-stroke: 5px $apricot;
 }
 
 #rabbithole {
