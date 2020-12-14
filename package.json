@@ -43,5 +43,8 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "typed.js": "^2.0.11"
+  }
 }
