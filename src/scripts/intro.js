@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const typed = new Typed("#typed", {
     stringsElement: "#typed-strings",
-    typeSpeed: 40,
+    typeSpeed: 50,
     startDelay: 1000,
     backDelay: 1000,
-    backSpeed: 12,
+    backSpeed: 40,
     loop: true
   }) 
 
