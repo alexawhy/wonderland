@@ -13,12 +13,12 @@ document.addEventListener("scroll", (e) => {
   scroll = offset;
 
   bush1.style.left = `${-scroll/20}%`;
-  bush1.style.width= `${60 + scroll/40}%`;
+  bush1.style.width = `${60 + scroll/40}%`;
 
   bush2.style.right = `${-scroll/20}%`;
   bush2.style.width= `${60 + scroll/40}%`;
 
-  rabbithole.style.width = `${120 + scroll/40}%`;
+  rabbithole.style.width = `${120 + scroll/15}%`;
 
   title.style.top = `${scroll/30}%`;
 
