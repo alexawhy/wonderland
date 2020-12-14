@@ -20,23 +20,28 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true
   }) 
 
-  const io = new IntersectionObserver(entries => {
-    console.log(entries);    
+  // const io = new IntersectionObserver(entries => {
+  //   console.log(entries);    
 
-    if (entries[0].intersectionRatio === 0) {
-      visibility = 'invisible';
-      intersectionRatio = 0;
-      intro.removeChild(span);
-      console.log("invisible");
-    } else {
-      visibility = 'visible';
-      intersectionRatio = entries[0].intersectionRatio;
-      console.log("visible");
-      intro.appendChild(span);
-    }
-  })
+  //   if (entries[0].intersectionRatio === 0) {
+  //     visibility = 'invisible';
+  //     intersectionRatio = 0;
 
-  io.observe(intro);
+  //     const cursor = document.querySelector(".typed-cursor");
+
+  //     intro.removeChild(span);
+  //     intro.removeChild(cursor);
+
+  //     console.log("invisible");
+  //   } else if (entries[0].intersectionRatio > 0.5) {
+  //     visibility = 'visible';
+  //     intersectionRatio = entries[0].intersectionRatio;
+  //     console.log("visible");
+  //     intro.appendChild(span);
+  //   }
+  // })
+
+  // io.observe(intro);
 })
 
 
