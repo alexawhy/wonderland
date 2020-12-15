@@ -4,6 +4,19 @@
   position: relative;
   overflow-x: hidden;
   overflow-x: visible;
+  // margin-bottom: 50px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 70%;
+    background: linear-gradient(180deg, rgba(73,46,5,1) 0%, rgb(48, 23, 39) 50%, rgb(59, 15, 53) 100%);
+    // border: 1px solid blue;
+    z-index: -1;
+    overflow-x: hidden;
+  }
 }
 
 #cloud1 {

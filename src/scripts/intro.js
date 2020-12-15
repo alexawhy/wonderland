@@ -6,7 +6,7 @@ let visibility = "invisible";
 let intersectionRatio = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
-  const intro = document.getElementById("intro");
+  const intro = document.getElementById("intro-card");
   const span = document.createElement("span");
   span.setAttribute("id", "typed");
   intro.appendChild(span);

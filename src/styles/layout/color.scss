@@ -10,9 +10,10 @@ $beau-blue: #c6def1;
 $languid-lavender: #dbcdf0;
 $orchid-pink: #f2c6de;
 $baby-pink: #f9c6c9;
-$white-50: #ffffff80;
-$white-40: #ffffff66;
-$white-25: #ffffff40;
+$white-50: rgba(255, 255, 255, 0.5);
+$white-40: rgba(255, 255, 255, 0.4);
+$white-25: rgba(255, 255, 255, 0.25);
+$white-10: rgba(255, 255, 255, 0.1);
 $gray-5: #1010100d;
 
 $old-lavender: #807182ff;
@@ -35,6 +36,7 @@ $dutch-white: #f6e4c0ff;
 $deep-champagne: #eece9fff;
 $fawn: #dda15eff;
 $liver-dogs: #bc6c25ff;
+$brown: rgb(80, 49, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #e2e2dfff, #d2d2cfff, #e2cfc4ff, #f7d9c4ff, #faedcbff, #c9e4deff, #c6def1ff, #dbcdf0ff, #f2c6deff, #f9c6c9ff);
