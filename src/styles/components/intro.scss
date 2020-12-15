@@ -1,11 +1,16 @@
 #intro {
   display: block;
   margin: 20px auto;
-  width: 40vw;
-  max-width: 500px;
+  width: 50vw;
+  max-width: 600px;
   padding: 20px;
   font-family: $monospace;
   font-weight: 700;
   font-size: 2em;
   text-align: center;
+  word-wrap: normal;
+
+  strong {
+    color: $dark-red;
+  }
 }

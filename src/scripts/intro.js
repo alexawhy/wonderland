@@ -15,8 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     stringsElement: "#typed-strings",
     typeSpeed: 50,
     startDelay: 1000,
-    backDelay: 1000,
-    backSpeed: 40,
+    fadeOut: true,
+    // backDelay: 1000,
+    // backSpeed: 30,
     loop: true
   }) 
 
