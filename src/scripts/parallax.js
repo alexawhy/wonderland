@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cloud2 = document.getElementById("cloud2");
   const cloud3 = document.getElementById("cloud3");
   const title = document.getElementById("title");
+  const plus1 = document.getElementById("plus-1");
   const rabbithole = document.getElementById("rabbithole");
 
   let scroll = window.pageYOffset;
@@ -22,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     rabbithole.style.width = `${120 + scroll/15}%`;
 
     title.style.top = `${scroll/30}%`;
-
+    plus1.style.top = `${5 + scroll/30}%`;
+  
     cloud1.style.top = `${5 - scroll/20}%`;
     cloud1.style.left = `${3 - scroll/80}%`;
     cloud1.style.width = `${15 - scroll/80}%`;

@@ -6,17 +6,18 @@ let visibility = "invisible";
 let intersectionRatio = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
-  const intro = document.getElementById("intro");
+  const intro = document.getElementById("intro-card");
   const span = document.createElement("span");
   span.setAttribute("id", "typed");
   intro.appendChild(span);
 
   const typed = new Typed("#typed", {
     stringsElement: "#typed-strings",
-    typeSpeed: 40,
+    typeSpeed: 50,
     startDelay: 1000,
-    backDelay: 1000,
-    backSpeed: 12,
+    fadeOut: true,
+    // backDelay: 1000,
+    // backSpeed: 30,
     loop: true
   }) 
 
