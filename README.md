@@ -17,6 +17,7 @@ In Alex in Wonderland, uesrs will be able to:
 
 ## Architecture and Technology 
 - `JavaScript`
+- `Typed.js`
 - `SASS`
 
 ## Implementation Timeline 
