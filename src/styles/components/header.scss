@@ -1,5 +1,4 @@
 header {
-  // position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10,15 +9,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  padding: 0 30px;
 
-  h1 {
-    margin-left: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
-    font-weight: 700;
-    color: #132f38;
-    display: none;
-  }
+  // h1 {
+  //   margin-left: 50px;
+  //   font-family: 'Courier New', Courier, monospace;
+  //   font-size: 2em;
+  //   font-weight: 700;
+  //   color: #132f38;
+  //   display: none;
+  // }
 }
 
 body::before {
@@ -38,7 +38,7 @@ body::before {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 30px;
+  // padding-right: 30px;
  
   i {
     display: block;
@@ -54,4 +54,64 @@ body::before {
       transform: translateY(-2px);
     }
   }
+}
+
+.dark-btn-container {
+  i {
+    display: inblock;
+    color: #132f38;
+  }
+}
+
+.fa-sun {
+  font-size: 2em;
+}
+
+.fa-moon {
+  font-size: 1.9em;
+}
+
+.switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+  top: 5px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #cccccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 34px;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #ffffff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #c3b071;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: #ffffff;
 }
