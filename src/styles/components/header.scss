@@ -1,3 +1,18 @@
+body::before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: -1000;
+  width: 100vw;
+  height: 90vh;
+  top: -5em;
+  background: linear-gradient(180deg, #3a7494, $green-sheen);
+}
+
+body.dark::before {
+  background: linear-gradient(180deg, #13171a, #173241);
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -10,6 +25,7 @@ header {
   top: 0;
   z-index: 100;
   padding: 0 30px;
+  opacity: 70%;
 
   // h1 {
   //   margin-left: 50px;
@@ -19,17 +35,16 @@ header {
   //   color: #132f38;
   //   display: none;
   // }
+
+  i {
+    display: inline-block;
+    color: #132f38; 
+  }
+
 }
 
-body::before {
-  content: "";
-  position: absolute;
-  display: block;
-  z-index: -1000;
-  width: 100vw;
-  height: 90vh;
-  top: -5em;
-  background: linear-gradient(180deg, #3a7494, $green-sheen);
+.dark header i {
+  color: $medium-champagne;
 }
 
 .header-right {
@@ -41,26 +56,21 @@ body::before {
   // padding-right: 30px;
  
   i {
-    display: block;
     font-size: 2em;
-    color: #132f38;
     margin-left: 15px;
     transition: 0.2s;
 
     &:hover {
       cursor: pointer;
-      color: #224b58;
       transition: 0.2s;
       transform: translateY(-2px);
+      color: #111b20;
     }
   }
 }
 
-.dark-btn-container {
-  i {
-    display: inblock;
-    color: #132f38;
-  }
+.dark .header-right i:hover {
+  color: $yellow-crayola;
 }
 
 .fa-sun {
@@ -69,6 +79,7 @@ body::before {
 
 .fa-moon {
   font-size: 1.9em;
+  transform: rotate(210deg);
 }
 
 .switch {
@@ -108,10 +119,10 @@ body::before {
 }
 
 input:checked + .slider {
-  background-color: #c3b071;
+  background-color: #999999;
 }
 
 input:checked + .slider:before {
   transform: translateX(26px);
-  background-color: #ffffff;
+  background-color: white;
 }

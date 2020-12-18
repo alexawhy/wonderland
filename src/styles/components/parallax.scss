@@ -56,7 +56,13 @@
   color: $congo-pink;
   transform: translate(-50%, 10%);
   text-shadow: 5px 5px $apricot;
-  -webkit-text-stroke: 5px $apricot;
+  -webkit-text-stroke: 0.05em $apricot;
+}
+
+.dark #title {
+  color: $yellow-crayola;
+  -webkit-text-stroke: 0.05em #ffe9b0;
+  text-shadow: 5px 5px #ffe9b0;
 }
 
 #plus-1 {
