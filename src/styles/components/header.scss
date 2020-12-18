@@ -1,5 +1,5 @@
 header {
-  position: absolute;
+  // position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,6 +8,7 @@ header {
   width: 100vw;
   background-color: transparent;
   position: sticky;
+  top: 0;
   z-index: 100;
 
   h1 {
@@ -41,14 +42,14 @@ body::before {
  
   i {
     display: block;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #132f38;
     margin-left: 15px;
     transition: 0.2s;
 
     &:hover {
       cursor: pointer;
-      color: #2d5968;
+      color: #224b58;
       transition: 0.2s;
       transform: translateY(-2px);
     }
