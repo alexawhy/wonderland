@@ -9,7 +9,7 @@ body::before {
   background: linear-gradient(180deg, #3a7494, $green-sheen);
 }
 
-body.dark::before {
+body.dark-theme::before {
   background: linear-gradient(180deg, #13171a, #173241);
 }
 
@@ -43,7 +43,7 @@ header {
 
 }
 
-.dark header i {
+.dark-theme header i {
   color: $medium-champagne;
 }
 
@@ -69,7 +69,7 @@ header {
   }
 }
 
-.dark .header-right i:hover {
+.dark-theme .header-right i:hover {
   color: $yellow-crayola;
 }
 
