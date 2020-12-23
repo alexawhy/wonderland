@@ -25,10 +25,12 @@ span[data-descr]:focus::after {
 
 .plus {
   display: block;
+  position: absolute;
   width: 40px;
   height: 40px;
   background-image: url("../assets/plus.svg");
   z-index: 100;
+  opacity: 80%;
 
   &:hover {
     cursor: pointer;
