@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentTheme = localStorage.getItem('theme');
   // const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-  console.log(currentTheme);
-
   if (currentTheme == "dark") {
     body.classList.add("dark-theme");
   } else if (currentTheme == "light") {
@@ -18,6 +16,5 @@ document.addEventListener("DOMContentLoaded", () => {
       : "dark";
     body.classList.toggle('dark-theme');
     localStorage.setItem("theme", theme);
-    console.log(theme)
   })
 });
