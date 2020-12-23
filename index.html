@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta property="og:title" content="Alex in Wonderland" />
-		<meta property="og:image" content="wonderland.jpg" />
-		<meta
-			property="og:description"
-			content="Alex in Wonderland is an Alice in Wonderland inspired interactive JavaScript and CSS demo."
-		/>
-		<meta
-			property="og:url"
-			content="https://alexandria-wong.com/wonderland/"
-		/>
-		<link rel="icon" href="./src/assets/favicon.png" type="image/png">
-		<link rel="stylesheet" href="./dist/main.css" />
-		<script src="https://kit.fontawesome.com/ade2e65c5e.js" crossorigin="anonymous"></script>
-		<script src="./dist/main.js"></script>
-		<title>Alex in Wonderland</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta property="og:title" content="Alex in Wonderland" />
+	<meta property="og:image" content="wonderland.jpg" />
+	<meta
+		property="og:description"
+		content="Alex in Wonderland is an Alice in Wonderland inspired interactive JavaScript and CSS demo."
+	/>
+	<meta
+		property="og:url"
+		content="https://alexandria-wong.com/wonderland/"
+	/>
+	<link rel="icon" href="./src/assets/favicon.png" type="image/png">
+	<link rel="stylesheet" href="./dist/main.css" />
+	<script src="https://kit.fontawesome.com/ade2e65c5e.js" crossorigin="anonymous"></script>
+	<script src="./dist/main.js"></script>
+	<title>Alex in Wonderland</title>
 </head>
 
-<body>
+<body class="">
 	<header>
-		<div class="header-center">
-			<h1>Alex in Wonderland</h1>
+		<div class="dark-btn-container">
+			<i class="fas fa-sun"></i>
+			<button class="switch" id="dark-mode-switch"></button>
+			<i class="fas fa-moon"></i>
 		</div>
 		<div class="header-right">
 			<a href="https://alexandria-wong.com/"><i class="fas fa-address-card"></i></a>
@@ -35,7 +37,11 @@
 	</header>
 	<section class="parallax">	
 		<h1 id="title">Alex in Wonderland</h1>
-		<div class="plus" id="plus-1" data-descr="You found the first description: JS Parallax effect! And this description is purely HTML and CSS"></div>	
+		<div 
+			class="plus" 
+			id="plus-1" 
+			data-descr="You found the first description: JS Parallax effect! And this description is purely HTML and CSS">
+		</div>	
 		<img src="src/assets/parallax/cloud1.svg" id="cloud1">
 		<img src="src/assets/parallax/cloud2.svg" id="cloud2">
 		<img src="src/assets/parallax/cloud3.svg" id="cloud3">
@@ -45,7 +51,11 @@
 	</section>
 	<section class="intro">
 		<div class="intro-card-container">
-			<div class="plus" id="plus-2" data-descr="Typewriter effect by Typed.js and glassmorphism UI"></div>	
+			<div 
+				class="plus" 
+				id="plus-2" 
+				data-descr="Typewriter effect by Typed.js and glassmorphism UI">
+			</div>	
 			<div id="intro-card">
 				<div id="typed-strings">
 					<p>

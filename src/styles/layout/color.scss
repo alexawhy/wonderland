@@ -1,15 +1,4 @@
 /* Color */
-
-$platinum: #e2e2df;
-$light-gray: #d2d2cf;
-$champagne-pink: #e2cfc4;
-$unbleached-silk: #f7d9c4;
-$papaya-whip: #faedcb;
-$light-cyan: #c9e4de;
-$beau-blue: #c6def1;
-$languid-lavender: #dbcdf0;
-$orchid-pink: #f2c6de;
-$baby-pink: #f9c6c9;
 $white-50: rgba(255, 255, 255, 0.5);
 $white-40: rgba(255, 255, 255, 0.4);
 $white-25: rgba(255, 255, 255, 0.25);
@@ -37,6 +26,11 @@ $deep-champagne: #eece9fff;
 $fawn: #dda15eff;
 $liver-dogs: #bc6c25ff;
 $brown: rgb(80, 49, 1);
+
+/* Dark Mode Color */
+$medium-champagne: #f3e1a7;
+$yellow-crayola: #e2c35e;
+
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #e2e2dfff, #d2d2cfff, #e2cfc4ff, #f7d9c4ff, #faedcbff, #c9e4deff, #c6def1ff, #dbcdf0ff, #f2c6deff, #f9c6c9ff);
