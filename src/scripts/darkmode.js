@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let theme = body.classList.contains("dark-theme")
       ? "light"
       : "dark";
-    document.body.classList.toggle('dark-theme');
+    body.classList.toggle('dark-theme');
     localStorage.setItem("theme", theme);
     console.log(theme)
   })
