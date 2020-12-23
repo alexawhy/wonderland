@@ -29,6 +29,10 @@
   width: 4%;
 }
 
+#plus-star {
+  display: none;
+}
+
 .cloud {
   display: block;
 }
@@ -36,6 +40,14 @@
 .dark-theme {
   .star {
     display: block;
+  }
+
+  #plus-star {
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: 17%;
+    transition: 0.6s;
   }
 
   .cloud {
@@ -125,13 +137,6 @@
     transition: 2s;
     cursor: pointer;
   }
-}
-
-#plus-star {
-  position: absolute;
-  top: 10%;
-  right: 17%;
-  transition: 0.6s;
 }
 
 #title {
