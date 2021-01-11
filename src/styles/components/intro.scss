@@ -2,9 +2,6 @@
   width: 100%;
   height: 100%;
   margin-top: 100px;
-  // padding: 100px 0;
-  // border: 1px solid red;
-  
 }
 
 .intro-card-container {
@@ -41,4 +38,23 @@
 #plus-typed {
   top: 0%;
   right: -10%;
+}
+
+.cheshire-cat {
+  position: relative;
+  width: 30vw;
+  height: 40vh;
+  left: 15vw;
+  transform: translateY(-3em);
+  
+
+  #tail {
+    animation: 1.5s linear 1s infinite alternate tailmovement;
+
+    @keyframes tailmovement {
+      0% { transform: rotate(10deg)translate(5vw, -32vh); }
+      100% { transform: rotate(-20deg)translate(-10vw, 35vh); }
+    }
+  }
+  
 }
