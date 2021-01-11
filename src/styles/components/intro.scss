@@ -47,16 +47,6 @@
   left: 30%;
   transform: translate(-50%, -3em);
   
-  // .eyes {
-  //   display: block;
-  //   width: 20%;
-  //   height: 20%;
-  //   border: 1px solid green; 
-  //   position: relative;
-  //   top: -90%;
-  //   left: 5%;
-  // }
-
   #tail {
     animation: 1.5s linear 1s infinite alternate tailmovement;
 
@@ -65,5 +55,10 @@
       100% { transform: rotate(-20deg) translate(-10%, 25%); }
     }
   }
-  
+}
+
+#plus-eyes {
+  position: relative;
+  top: -35%;
+  left: 5%;
 }
