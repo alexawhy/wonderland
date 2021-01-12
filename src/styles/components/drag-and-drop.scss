@@ -1,0 +1,45 @@
+.drag-ang-drop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 4em auto;
+  position: relative;
+
+}
+
+
+.alex {
+  width: 30vw;
+  height: 20vh;
+  border: 2px dashed grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.shrink {
+  width: 3em;
+  height: 3em;
+  background-color: turquoise;
+
+  &::before {
+    content: "Drink me"
+  }
+}
+
+.enlarge {
+  width: 3em;
+  height: 3em;
+  background-color: pink;
+
+  &::before {
+    content: "Eat me"
+  }
+}
