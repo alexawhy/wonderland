@@ -18,15 +18,23 @@
   justify-content: center;
 
   p {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
   }
 }
 
+.draggable {
+  width: 5em;
+  height: 5em;
+  padding: 1em;
+
+  &:hover {
+    cursor: grabbing;
+  }
+}
+
 .shrink {
-  width: 3em;
-  height: 3em;
   background-color: turquoise;
 
   &::before {
@@ -35,8 +43,6 @@
 }
 
 .enlarge {
-  width: 3em;
-  height: 3em;
   background-color: pink;
 
   &::before {
