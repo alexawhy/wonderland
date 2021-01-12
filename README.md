@@ -1,4 +1,5 @@
 # Alex in Wonderland
+![alex in wonderland](wonderland.gif)
 [Visit the Wonderland](https://alexandria-wong.com/wonderland/)
 
 ## Background and Overview 
