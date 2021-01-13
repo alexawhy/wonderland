@@ -8,12 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
   shrink.innerHTML = "Drink Me";
   enlarge.innerHTML = "Eat Me";
 
+  // no longer able to drag when originalScale exceed 2
+
   shrink.addEventListener("dragstart", ev => {
     ev.dataTransfer.setData("text/plain", "0.5");
   })
 
   enlarge.addEventListener("dragstart", ev => {
-    ev.dataTransfer.setData("text/plain", "1.5");
+    ev.dataTransfer.setData("text/plain", "2");
   })
 
   dummyTextcontainer.addEventListener("dragover", ev => {
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     let scale = parseFloat(ev.dataTransfer.getData("text/plain"));
     let newScale = originalScale * scale;
+    console.log(newScale);
     dummyText.style.transform = `scale(${newScale})`;
   })
 })
