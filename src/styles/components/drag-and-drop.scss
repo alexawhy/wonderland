@@ -1,0 +1,71 @@
+.drag-and-drop {
+  background-color: white;
+  border: 1px solid green;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dark-theme .drag-and-drop{
+  background-color: rgb(28, 31, 36);
+}
+
+.drag-and-drop .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 4em auto;
+  position: relative;
+}
+
+
+.alex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  pointer-events: auto;
+
+  img {
+    pointer-events: auto;
+    transition: 1s;
+    transform: scale(1);
+  }
+}
+
+.draggable {
+  width: 5em;
+  height: 5em;
+  padding: 1em;
+
+  &:hover {
+    cursor: grabbing;
+  }
+}
+
+.shrink, .enlarge {
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    transform: scale(2);
+  }
+
+  p {
+    display: none;
+    transition: 0.2s;
+  }
+
+  &:hover p {
+    display: block;
+    margin-top: 20px;
+    // text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: 0.2s;
+  }
+}
