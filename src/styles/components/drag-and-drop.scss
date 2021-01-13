@@ -10,12 +10,10 @@
 
 
 .alex {
-  width: 50vw;
-  height: 30vh;
-  border: 2px dashed grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  pointer-events: auto;
   
 
   p {
@@ -24,6 +22,7 @@
     text-align: center;
     transition: 1s;
     transform: scale(1);
+    
   }
 }
 
