@@ -1,11 +1,23 @@
 .drag-and-drop {
+  background-color: white;
+  border: 1px solid green;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dark-theme .drag-and-drop{
+  background-color: rgb(28, 31, 36);
+}
+
+.drag-and-drop .inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: 4em auto;
   position: relative;
-
 }
 
 
@@ -14,15 +26,11 @@
   flex-direction: column;
   justify-content: center;
   pointer-events: auto;
-  
 
-  p {
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
+  img {
+    pointer-events: auto;
     transition: 1s;
     transform: scale(1);
-    
   }
 }
 
@@ -36,18 +44,28 @@
   }
 }
 
-.shrink {
-  background-color: turquoise;
+.shrink, .enlarge {
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  // &::before {
-  //   content: "Drink me"
-  // }
-}
+  img {
+    transform: scale(2);
+  }
 
-.enlarge {
-  background-color: pink;
+  p {
+    display: none;
+    transition: 0.2s;
+  }
 
-  // &::before {
-  //   content: "Eat me"
-  // }
+  &:hover p {
+    display: block;
+    margin-top: 20px;
+    // text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: 0.2s;
+  }
 }

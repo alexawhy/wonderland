@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".drag-and-drop");
-  const dummyTextcontainer = document.querySelector(".alex");
-  const dummyText = document.querySelector(".alex p");
-  const shrink = document.querySelector(".shrink");
-  const enlarge = document.querySelector(".enlarge");
+  const alexContainer = document.querySelector(".alex");
+  const alex = document.querySelector(".alex img");
+  const shrink = document.querySelector(".shrink img");
+  const enlarge = document.querySelector(".enlarge img");
 
   shrink.innerHTML = "Drink Me";
   enlarge.innerHTML = "Eat Me";
@@ -13,22 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   enlarge.addEventListener("dragstart", ev => {
-    ev.dataTransfer.setData("text/plain", "1.5");
+    ev.dataTransfer.setData("text/plain", "2");
   })
 
-  dummyTextcontainer.addEventListener("dragover", ev => {
+  alexContainer.addEventListener("dragover", ev => {
     ev.preventDefault();
   });
 
-  dummyTextcontainer.addEventListener("drop", ev => {
+  alexContainer.addEventListener("drop", ev => {
     ev.preventDefault();
-    let originalMatrix = window.getComputedStyle(dummyText).getPropertyValue("transform");
+    let originalMatrix = window.getComputedStyle(alex).getPropertyValue("transform");
     let originalScale = originalMatrix.slice(7).split(",")[0];
-    console.log(`originalScale: ${originalScale}`)
     
     let scale = parseFloat(ev.dataTransfer.getData("text/plain"));
     let newScale = originalScale * scale;
-    console.log(newScale);
-    dummyText.style.transform = `scale(${newScale})`;
+    alex.style.transform = `scale(${newScale})`;
   })
 })
