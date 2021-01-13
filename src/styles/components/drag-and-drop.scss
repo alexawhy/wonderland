@@ -1,4 +1,4 @@
-.drag-ang-drop {
+.drag-and-drop {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,11 +16,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 
   p {
     font-size: 3em;
     font-weight: bold;
     text-align: center;
+    transition: 1s;
+    transform: scale(1);
   }
 }
 
@@ -37,15 +40,15 @@
 .shrink {
   background-color: turquoise;
 
-  &::before {
-    content: "Drink me"
-  }
+  // &::before {
+  //   content: "Drink me"
+  // }
 }
 
 .enlarge {
   background-color: pink;
 
-  &::before {
-    content: "Eat me"
-  }
+  // &::before {
+  //   content: "Eat me"
+  // }
 }
