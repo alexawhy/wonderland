@@ -85,7 +85,7 @@ if (scale === 0.5) {
 The dark mode is achieved by toggling a `dark-theme` class in the `body`.
 
 ```html
-<body class="">
+<body>
   <header>
     <div class="dark-btn-container">
       <i class="fas fa-sun"></i>
