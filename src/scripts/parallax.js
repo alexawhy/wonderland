@@ -13,11 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const plusStar = document.getElementById("plus-star");
   const rabbithole = document.getElementById("rabbithole");
 
-  let scroll = window.pageYOffset;
-
   document.addEventListener("scroll", (e) => {
-    let offset = window.pageYOffset;
-    scroll = offset;
+    let scroll = window.pageYOffset;
 
     bush1.style.left = `${-scroll/20}%`;
     bush1.style.width = `${60 + scroll/40}%`;
